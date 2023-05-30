@@ -1,0 +1,131 @@
+.modify__box {
+    margin-bottom: 100px;
+}
+.modify__box form {
+    display: flex;
+    width: 100%;
+}
+.modify__box form .modify__left {
+    width: 30%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.modify__box form .modify__left img {
+    margin: 30px 0;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.modify__box form .modify__left label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.modify__box form .modify__left label #userImgSrc[type="file"] {
+    display: none;
+}
+.modify__box form .modify__left span {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--bg__gray3);
+}
+.modify__box form .modify__right {
+    width: 70%;
+    padding: 50px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.modify__box form .modify__right .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+.modify__box form .modify__right .box .check__wrap {
+    width: 70%;
+}
+.modify__box form .modify__right .box .check__wrap .input__wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.modify__box form .modify__right .box .check__wrap p,
+.modify__box form .modify__right .box .input__wrap2 p {
+    text-align-last: left;
+    color: red;
+    margin-top: 10px;
+}
+.modify__box form .modify__right .box .input__wrap2 {
+    width: 70%;
+}
+.modify__box form .modify__right .box .input__wrap2 input {
+    width: 100% !important;
+}
+.modify__box form .modify__right .box label {
+    width: 30%;
+    color: #fff;
+    font-size: 24px;
+}
+.modify__box form .modify__right .box input {
+    width: 70%;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.modify__box form .modify__right button {
+    width: 60%;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.modify__box form .modify__left label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.modify__box form .modify__left label:hover {
+    background-color: #808cd3;
+}
+
+.modify__box form .modify__right button {
+    width: 60%;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.modify__box form .modify__right button:hover {
+    background-color: #808cd3;
+}
+.modify__box form .modify__right a {
+    transition: all 0.3s;
+}
+.modify__box form .modify__right a:hover {
+    background-color: #808cd3;
+}

@@ -1,0 +1,288 @@
+/* skip */
+#skip {
+    position: relative;
+    z-index: 1000000;
+}
+#skip a {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: -400px;
+    top: 0;
+    padding: 20px 40px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 0;
+}
+
+/* color style */
+.white {
+    background-color: var(--color__white) !important; 
+    color: var(--bg__black) !important; 
+}
+.black {
+    background-color: var(--bg__black);
+}
+.gray {
+    background-color: var(--bg__gray);
+}
+
+
+/* font */
+/* body.macintosh {
+    font-family: var(--main__font) !important;
+}
+body.windows {
+    font-family: var(--main__win) !important;
+} */
+
+
+/* container */
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+/* 간격설정 */
+.mt5 {margin-top: 5px !important;}
+.mt10 {margin-top: 10px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+.mt60 {margin-top: 60px !important;}
+.mt70 {margin-top: 70px !important;}
+
+.ml5 {margin-left: 5px !important;}
+.ml10 {margin-left: 10px !important;}
+.ml20 {margin-left: 20px !important;}
+.ml30 {margin-left: 30px !important;}
+.ml40 {margin-left: 40px !important;}
+.ml50 {margin-left: 50px !important;}
+.ml60 {margin-left: 60px !important;}
+.ml70 {margin-left: 70px !important;}
+.ml80 {margin-left: 80px !important;}
+.ml90 {margin-left: 90px !important;}
+.ml100 {margin-left: 100px !important;}
+
+.mr5 {margin-right: 5px !important;}
+.mr10 {margin-right: 10px !important;}
+.mr20 {margin-right: 20px !important;}
+.mr30 {margin-right: 30px !important;}
+.mr40 {margin-right: 40px !important;}
+.mr50 {margin-right: 50px !important;}
+.mr60 {margin-right: 60px !important;}
+.mr70 {margin-right: 70px !important;}
+.mr80 {margin-right: 80px !important;}
+.mr90 {margin-right: 90px !important;}
+.mr100 {margin-right: 100px !important;}
+
+.mb5 {margin-bottom: 5px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb40 {margin-bottom: 40px !important;}
+.mb50 {margin-bottom: 50px !important;}
+.mb60 {margin-bottom: 60px !important;}
+.mb70 {margin-bottom: 70px !important;}
+.mb80 {margin-bottom: 70px !important;}
+.mb90 {margin-bottom: 70px !important;}
+.mb100 {margin-bottom: 70px !important;}
+
+
+
+/* 보더 설정 */
+.bmStyle {
+    border-bottom: 3px solid var(--color__black);
+    position: relative;
+}
+.bmStyle::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background-color: var(--color__black);
+}
+.btStyle {
+    border-top: 3px solid var(--color__black);
+    position: relative;
+}
+.btStyle::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: -8px;
+    background-color: var(--color__black);
+}
+.bodertop {
+    border-top: 3px solid var(--color__black);
+}
+.bodertopsmoll{
+    border-top: 1px solid var(--color__black);
+}
+.boderbottom {
+    border-bottom: 3px solid var(--color__black);
+}
+.boderbottomsmoll{
+    border-bottom: 1px solid var(--color__black);
+}
+
+/* btn Style */
+
+.btnStyle {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.2em;
+    margin: 0 auto;  
+    border-radius: 50px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.btnStyle a {
+    display: inline-block;
+    text-align: center;
+}
+.btnStyle.atag {
+    text-align: center;
+    line-height: 50px;
+}
+.btnStyle2 {
+    display: block;
+    background-color: #83c5f5;
+    color: #fff;
+    width: 100%;
+    margin: 0 0 0 auto;  
+    border-radius: 20px;
+    cursor: pointer;
+    width: 110px;
+}
+.btnStyle2 a {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 100px;
+}
+.btnStyle3 {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;  
+    border-radius: 20px;
+    cursor: pointer;
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.btnStyle4 {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+    padding: 10px 0;
+}
+.btnStyle5 {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;  
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* input Style */
+.inputStyle {
+    width: 100%;
+    border-radius: 20px;
+    padding: 3% 5%;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSans';
+    margin-bottom: 20px;
+}
+.inputStyle2 {
+    width: 65%;
+    border-radius: 20px;
+    padding: 3% 5%;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSans';
+}
+.inputStyle3 {
+    width: 100%;
+    border-radius: 20px;
+    padding: 2% 2%;
+    border: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'GmarketSans';
+}
+.inputStyle4 {
+    width: 100%;
+    border-radius: 20px;
+    padding: 3% 5%;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSans';
+}
+/* list Style */
+.listStyle li {
+    padding-left: 16px;
+    position: relative;
+}
+.listStyle li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--color__black);
+    border-radius: 50%;
+    position: absolute;  
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.listStyle2 li {
+    padding-left: 16px;
+    position: relative;
+}
+.listStyle2 li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--color__black);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+
+
+/* Label Style */
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 1.2em;
+}
+label.required::after {
+    content: ' *';
+    color: #ff0000;
+}
+
+

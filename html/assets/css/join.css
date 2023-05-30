@@ -1,0 +1,114 @@
+/* join__inner */
+.join__inner {
+    /* font-family: var(--main__font);
+    width: 450px;
+    padding: 54px 60px 42px;
+    background: linear-gradient(180deg, #343846 0%, rgba(52, 56, 70, 0.8) 100%);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 60px 100px rgba(0,0,0,0.4);
+    text-align: center;
+    align-items: center; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #343846 0%, rgba(52, 56, 70, 0.8) 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    width: 450px;
+}
+.join__inner h2 { 
+    font-size: 30px;
+    color: var(--color__white);
+    font-weight: 700;
+} 
+.join__inner img {
+    width: 233.34px;    
+}
+.join__inner p {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color__white);
+}
+.join__form form fieldset > div {
+    position: relative;
+    padding-top: 16px;
+}
+.join__form form fieldset > div > label {
+    position: absolute;
+    left: 30px;
+    top: 9px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #4DB4FF;
+}
+.join__form form .gender {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.join__form form fieldset > div > div > label {
+    padding: 10px 50px;
+    background-color: var(--color__white);
+    border-radius: 50px;
+}
+.join__form form fieldset div {
+    display: flex;
+}
+.join__inner .btnStyle3 {
+    width: 50%;
+    left: 200px;
+    top: 0;
+}
+.join__form form fieldset > button {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* joinEnd */
+.joinEnd {
+    font-family: var(--main__font);
+    width: 450px;
+    padding: 250px 42px 203px;
+    background: linear-gradient(180deg, #343846 0%, rgba(52, 56, 70, 0.8) 100%);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 60px 100px rgba(0,0,0,0.4);
+    text-align: center;
+    align-items: center;
+}
+.joinEnd h2 {
+    line-height: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: var(--color__white);
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+.joinEnd p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--color__white);
+    padding: 42px 0 35px 0;
+}
+
+
+.joinEnd .btnStyle4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+

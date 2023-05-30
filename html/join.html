@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="login__wrap">
+        <div class="login__title">
+            <div class="login__logo">
+                <img src="assets/img/logo.png" alt="로고">
+            </div>            
+            <div class="login__desc">
+                <span class="desc">개인정보를 입력해주세요!</span>
+            </div>
+        </div>
+        <div class="login__form">
+            <form action="#" name="#" method="#">
+                <fieldset>
+                    <legend class="blind">회원가입</legend>
+                    <div class="form1">
+                        <label for="youEmail" class="ir">이메일</label>
+                        <input type="email" id="youEmail" class="inputStyle2" name= "youEmail" placeholder="이메일을 입력해주세요." required>
+                        <button type="submit" class="btnStyle2">중복 확인</button>
+                    </div>
+                    <div class="form2">
+                        <label for="youName" class="ir">이름</label>
+                        <input type="text" id="youName" class="inputStyle" name= "youName" placeholder="이름을 입력해주세요." required>
+                    </div>
+                    <div class="form3">
+                        <label for="youNickname" class="ir">닉네임</label>
+                        <input type="text" id="youNickname" class="inputStyle" name= "youNickname" placeholder="닉네임을 입력해주세요." required>
+                    </div>
+                    <div class="form4">
+                        <label for="youPass" class="ir">비밀번호</label>
+                        <input type="password" id="youPass" class="inputStyle" name= "youPass" placeholder="비밀번호를 입력해주세요." required>
+                    </div>
+                    <div class="form5">
+                        <label for="youPassc" class="ir">비밀번호 확인</label>
+                        <input type="password" id="youPassc" class="inputStyle" name= "youPassc" placeholder="비밀번호를 한번 더 입력해주세요." required>
+                    </div>
+                    <div class="form6">
+                        <label for="youPhone" class="ir">연락처</label>
+                        <input type="text" id="youPhone" class="inputStyle" name= "youPhone" placeholder=" 연락처를 입력해주세요." required>
+                    </div>
+                    <div>
+                        <label for="youGender" class="ir">성별</label>
+                        <div class="gender">
+                            <label for="choice1" class="btnStyle3">남자
+                                <input type="radio" id="choice1" name="choice" value="1">
+                            </label> 
+                            <label for="choice2" class="btnStyle3">여자
+                                <input type="radio" id="choice1" name="choice" value="2">
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btnStyle"><a href="joinEnd.html">회원가입</a</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

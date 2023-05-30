@@ -1,0 +1,240 @@
+.kind__section {
+    color: var(--color__white);
+}
+.kind__section h3 {
+    font-size: 50px;
+    margin: 100px 0 30px 0;
+}
+.kind__section h3 a {
+    color: #fff;
+}
+.kind__section h3 a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.kind__section h4 {
+    font-size: 30px;
+}
+.kind__section p {
+    color: #c9c9c9;
+    font-size: 20px;
+    margin: 10px 0 100px 0;
+}
+.kind__section .kind {
+    display: flex;
+    justify-content: space-between;
+}
+.kind__section ul {
+    width: 48%;
+}
+.kind__section ul li {
+    word-break: keep-all;
+    margin-bottom: 5px;
+    line-height: 1.7;
+}
+.kind__section iframe {
+    width: 48%;
+}
+.kind__section .part {
+    font-size: 30px;
+    margin: 100px 0 100px 0;
+}
+.kind__section .part::before {
+    content: '* ';
+}
+.kind__section figure {
+    margin-bottom: 100px;
+}
+.kind__section img {
+    width: 70%;
+    height: 400px;
+}
+.share {
+    /* background-color: #2F3A64; */
+    color: #fff;
+    padding: 30px 0 100px 0;  
+}
+.cards__inner.col4 > .card,
+.cards__inner > .card {
+    width: 24%;
+}
+.cards__inner.line3 .card__title h5 {
+    -webkit-line-clamp: 3;
+}
+.cards__inner.line2 .card__title h5 {
+    -webkit-line-clamp: 2;
+}
+.cards__inner.line1 .card__title h5 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 1.2em; /* 원하는 높이로 설정 */
+    overflow: hidden;
+}
+.cards__inner.line1 .card__title h3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 3em; /* 원하는 높이로 설정 */
+    overflow: hidden;
+}
+.cards__inner.line0 .card__title h5 {
+    -webkit-line-clamp: 0;
+    display: none;
+}
+.card__body a {
+    color: #fff !important;
+}
+.share h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.share h4 a {
+    color: #fff;
+}
+.share h4 a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.share h4::before {
+    content: '* ';
+}
+.share__search {
+    margin-bottom: 20px;
+}
+.share__search fieldset {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.share__search input {
+    border: 0;
+    background-color: var(--color__white);
+    padding: 9px 30px;
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 10px;
+}
+.share__search select {
+    border: 0;
+    width: 90px;
+    height: 40px;
+    padding: 11px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.share__search button {
+    margin-right: 10px;
+}
+.share__search a {
+    text-align: center;
+}
+.share .share__inner .card .card__title h3 {
+    text-align: left;
+}
+.share .share__inner .cards__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.share .share__inner .cards__inner .card {
+    width: 24%;
+    background-color: #2F3A64;
+    margin-bottom: 30px;
+}
+.share .share__inner .cards__inner .card img {
+    background-color: #fff;
+    height: 400px;
+}
+.share .share__inner .cards__inner .card .card__title h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 20px 20px 5px 20px;
+    text-align: left;
+}
+.share .share__inner .cards__inner .card .card__title p {
+    text-align: left;
+    padding: 0px 20px 5px 20px;
+}   
+.share .share__inner .cards__inner .card .card__info {
+    color: #fff;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    transition: all 0.3s;
+}
+.share .share__inner .cards__inner .card:hover {
+    background-color: rgb(125, 146, 183);
+}
+.share .share__inner .cards__inner .card .card__info .author {
+    width: 40%;
+    margin-bottom: 5px;
+}
+.share .share__inner .cards__inner .card .card__info .date {
+    width: 40%;
+    margin-bottom: 5px;
+}
+.share .share__inner .cards__inner .card .card__info .like {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.share .share__inner .cards__inner .card .card__info a {
+    color: #fff;
+    text-align: right;
+    width: 40%;
+    margin-right: 3em;
+}
+.share .share__inner .cards__inner .card .card__info a::before {
+    content: '';
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='9.14497' cy='7.5' rx='8.95161' ry='7.5' fill='white'/%3E%3Cline x1='3.77344' y1='7.5' x2='14.5154' y2='7.5' stroke='black'/%3E%3Cline x1='9.04883' y1='3' x2='9.04883' y2='12' stroke='black'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+}
+.cards__pages {
+    margin: 100px;
+} 
+.cards__pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards__pages li a {
+    border: 1px solid #fff;
+    padding: 10px 13px;
+    margin-left: -1px;
+    color: var(--color__white);
+}
+.cards__pages li a:hover {
+    background-color: var(--color__white);
+    color: var(--color__black);
+}
+.cards__pages li.active a {
+    background-color: var(--color__white);
+    color: var(--color__black);
+}
+.category {
+    margin-top: 50px;
+}
+.category ul {
+    display: flex;
+} 
+.category li {
+    margin-right: 10px;
+}
+.category li a {
+    color: #fff;
+    font-size: 18px;
+}
+.category li a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}

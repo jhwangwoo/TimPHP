@@ -1,0 +1,191 @@
+/* #section */
+#section__mypage {
+    /* padding-top: 70px; */
+    /* padding: 300px 0 370px 0; */
+    box-sizing: border-box;
+    background-color: #464B5F;
+    width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mypage {
+    color: #fff;
+    font-size: 50px;
+    margin: 100px 0 30px 0;
+}
+#section__mypage h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.section__box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/* section__left */
+.section__left {
+    width: 30%;
+    margin-right: 50px;
+    text-align: center;
+}
+.section__left img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 30px 0;
+    border-radius: 50%;
+}
+.section__left a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+}
+.section__left a:last-child {
+    margin-bottom: 0px;
+}
+
+/* section__right */
+.section__right {
+    width: 70%;
+    padding: 50px 0;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.section__right form {
+    width: 80%;
+}
+.section__right form > div {
+    margin-bottom: 40px;
+}
+.section__right form > div:last-child {
+    margin-bottom: 0;
+}
+.section__right form .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.section__right form .box label {
+    width: 30%;
+    color: #fff;
+    font-size: 24px;
+}
+.section__right form .box input {
+    width: 70%;
+    padding: 10px 30px;
+}
+.section__right form .box span {
+    width: 70%;
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+}
+.section__right form .box p {
+    width: 100%;
+    color: red;
+    margin-top: 10px;
+}
+.section__right button {
+    width: 60%;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+
+/* mypageModify.html */
+/* mypageModify.html  .section__left */
+.section__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section__left a.mymo__profile {
+    background-color: #5770F8;
+    color: #000;
+}
+.section__left a.mymo__complate {
+    background-color: #5770F8;
+    color: #000;
+}
+
+/* mypageModify.html  .section__right */
+.section__right input {
+    text-align: center;
+    border-radius: 5px;
+}
+.section__right form .box {
+    margin: 20px 0 30px 0;
+}
+.section__right form .box .check__wrap {
+    width: 70%;
+}
+.section__right form .box .check__wrap .input__wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.btnStyleM {
+    width: 29%;
+    text-align: center;
+    background-color: #5770F8;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: var(--color__white)
+}
+.section__right form .box .check__wrap .warning {
+    text-align-last: left;
+    color: red;
+}
+
+
+/* mypagePassword.html */
+/* #mypage__bord {
+    height: 1270px;
+} */
+
+/* mypage, mypageBord, mypageModify, mypagePassword에 들어가는 footer */
+#footer {
+    background-color: #2D303D;
+}
+
+.userPassComment {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section__left a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+.section__left a:hover {
+    background-color: #808cd3;
+}
+.section__right button.mymo__profile {
+    transition: all 0.3s;
+}
+.section__right button.mymo__profile:hover {
+    background-color: #808cd3;
+}

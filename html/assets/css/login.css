@@ -1,0 +1,252 @@
+.login__popup,
+.login__popup2,
+.login__popup3,
+.login__popup4,
+.login__popup5,
+.login__popup6,
+.login__popup7,
+.login__popup8
+ {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #14032f61;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    z-index: 20000;
+    display: none;
+}
+.login__wrap {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 30px 60px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #343846 0%, rgba(52, 56, 70, 0.8) 100%);
+}
+.login__title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login__title h2 {
+    font-size: 50px;
+}
+.login__logo {
+    text-align: center;
+}
+.login__logo img {
+    width: 210px;  
+    height: 150px; 
+}
+.login__desc h2 {
+    font-size: 50px;
+}
+.login__desc .desc {
+    font-size: 18px;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.login__form {
+    margin: 20px 0;
+}
+.login__list {
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+.login__list ul {
+    display: flex;
+    justify-content: center;
+}
+.login__list ul li {
+    margin-right: 14px;
+    position: relative;
+}
+.login__list ul li:after {
+    content: "";
+    width: 2px;
+    height: 15px;
+    background-color: #fff;
+    position: absolute;
+    right: -8px;
+    top: 3px;
+    z-index: 10;
+}
+.login__list ul li:last-child {
+    margin-right: 0px;
+}
+.login__list ul li:last-child:after {
+    width: 0px;
+} 
+.login__list ul li a {
+    color: #fff;
+}
+.text {
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 10px;
+}
+.text span {
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    color: #83C5F5;
+}
+.text2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cebc31;
+}
+.login__end {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.login__end h2 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #343846;
+    padding: 50px 0;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.login__end h3 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #343846;
+    padding: 50px 0;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.login__end .desc {
+    font-size: 24px;
+}
+.login__end .desc2 {
+    display: inline-block;
+    font-size: 23px;
+    margin: 20px 0px;
+}
+.login__form .form1,
+.login__form .form2,
+.login__form .form3,
+.login__form .form4,
+.login__form .form5,
+.login__form .form6 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 20px;
+}
+.login__form .form1 a,
+.login__form .form2 a,
+.login__form .form3 a,
+.login__form .form4 a,
+.login__form .form5 a,
+.login__form .form6 a {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+}
+.login__form .form1 p,
+.login__form .form2 p,
+.login__form .form3 p,
+.login__form .form4 p,
+.login__form .form5 p,
+.login__form .form6 p {
+    width: 100%;
+}
+.login__form .form1::after {
+    content: '이메일';
+}
+.login__form .form2::after {
+    content: '이름';
+}
+.login__form .form3::after {
+    content: '닉네임';
+}
+.login__form .form4::after {
+    content: '비밀번호';
+}
+.login__form .form5::after {
+    content: '비밀번호 확인';
+}
+.login__form .form6::after {
+    content: '연락처';
+}
+.login__form a {
+    display: inline-block;
+    text-align: center;
+}
+.login__form .form1::after,
+.login__form .form2::after,
+.login__form .form3::after,
+.login__form .form4::after,
+.login__form .form5::after,
+.login__form .form6::after {
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    color: #83c5f5;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #343846;
+    font-size: 20px;
+}
+.login__form .comment {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.gender {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+}
+.gender label {
+    text-align: center;
+    transition: all 0.3s;
+}
+.gender::after {
+    content: '성별';
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    color: #83c5f5;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #343846;
+    font-size: 20px;
+}
+.login__form .gender label:hover {
+    color: #83c5f5;
+}
+.login__form button {
+    transition: all 0.3s;
+}
+.login__form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.login__form fieldset a.btnStyle2 {
+    transition: all 0.3s;
+}
+.login__form fieldset a.btnStyle2:hover {
+    background-color: #3e8fc9;
+}
+.login__wrap .atag {
+    transition: all 0.3s;
+}
+.login__wrap .atag:hover {
+    background-color: #000;
+    color: #fff;
+}

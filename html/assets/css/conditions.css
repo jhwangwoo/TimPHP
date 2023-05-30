@@ -1,0 +1,77 @@
+/* login__information */
+.login__information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.login__information p {
+    text-align: center;
+    margin: 15px 0 25px 0;
+}
+.login__information > ul {
+    width: 100%;
+    height: 125px;
+    overflow-Y: scroll;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+}
+.login__information ul > li.first {
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 0 5px;
+}
+.login__information ul > li {
+    margin-bottom: 2px;
+}
+.login__information ul > li > ul {
+    margin-left: 10px;
+}
+.login__information ul > li > ul > li {
+    margin-bottom: 2px;
+}
+
+.login__information .check {
+    margin: 20px 0 30px 0;
+}
+.login__information .check fieldset {
+    display: flex;
+}
+.login__information .check label {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.login__information .check input {
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+}
+.login__information ul::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+.login__information ul::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: rgb(80, 80, 80); /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.login__information ul::-webkit-scrollbar-track {
+    height: 10%;
+    background: rgb(158, 158, 158);  /*스크롤바 뒷 배경 색상*/
+    border-radius: 10px;
+}
+.login__wrap .confirm__hover,
+.login__wrap .atag__hover {
+    transition: all 0.3s;
+}
+.login__wrap .confirm__hover:hover,
+.login__wrap .atag__hover:hover {
+    background-color: #000;
+    color: #fff;
+}

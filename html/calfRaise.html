@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운동 방법 : 카프레이즈</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="skip">
+            <a href="#header">헤더 영역 바로 가기</a>
+            <a href="#main">컨텐츠 영역 바로 가기</a>
+            <a href="#footer">푸터 영역 바로 가기</a>
+        </div>
+        <!-- //SKIP -->
+        <header id="header">
+            <h1><a href="main.html">헬드백</a></h1>
+            <p></p>
+            <div class="icon__box">
+                <ul>
+                    <li class="login"><button type="submit"><img src="assets/img/icon_login.svg" alt="로그인"></button></li>
+                    <li><a href="mypage.html"><img src="assets/img/icon_mypage.svg" alt="마이페이지"></a></li>
+                    <li class="btn__menu"><a href="#"><img src="assets/img/icon_menu.svg" alt="메뉴"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <nav id="nav">
+            <button>X</button>
+            <div class="nav__wrap">
+                <img src="assets/img/logo.png" alt="logo">
+                <a href="login.html" class="btnStyle5" alr="로그인">로그인</a>
+                <!-- <img class="profile" src="assets/img/profile.png" alt="프로필">
+                <a href="#" class="btnStyle5" alr="로그아웃">로그아웃</a> -->
+                <ul>
+                    <li><a href="intro.html">헬드백 소개</a></li>
+                    <li><a href="mainSection.html">운동 종류</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <div class="slider__wrap">
+            <div class="slider__img">
+                <div class="slider">
+                    <img src="assets/img/slider_01.png" class="img__logo">
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+
+        <div class="container">
+            <div class="kind__section">
+                <h3><a href="mainSection.html#leg">하체 운동</a></h3>
+                <h4>카프레이즈</h4>
+                <p>종아리 근육을 강화하는 운동입니다. 주로 머신을 이용해서 수행하지만  머신이 없으면 집에서도 충분히 맨몸으로도 자극 효과를 얻는데 가능합니다.</p>
+                <div class="kind">
+                    <ul>
+                        <li>1. 바닥에 양발을 어깨 너비로 벌리고 선 자세로 서서, 손은 옆구리에 놓습니다.</li>
+                        <li>2. 발끝을 들어 올리면서 종아리 근육을 수축시킵니다. 최대한 발끝을 올리고, 1~2초 정도 유지합니다.</li>
+                        <li>3. 발끝을 내려서 출발 자세로 돌아옵니다. 발끝을 바닥에 놓고 1회 운동을 마칩니다.</li>
+                        <li>4. 세트 수와 반복 횟수는 자신의 체력과 목표에 맞게 조절합니다. 보통 3-4 세트를 하고, 각 세트마다 6-12 회 정도를 하는 것이 일반적입니다.</li>
+                    </ul>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YmmFMZF8A48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="part">카프레이즈 자극 부위</div>
+                <figure>
+                    <img src="assets/img/calfraiseimg-min.png" alt="카프레이즈">
+                </figure>
+            </div>            
+        </div>
+
+        <footer id="footer">
+            <div class="logo"> 
+                <img src="assets/img/icon_logo.svg" alt="로고">
+            </div>
+            <p>
+                2023 ©️ 헬드백<br>
+                All Right Reserved
+            </p>
+        </footer>
+    </div>
+
+    <script>    
+        const btnMenu = document.querySelector(".btn__menu");
+        const btnClose = document.querySelector("#nav button");
+
+        // 사이드 메뉴
+        btnMenu.addEventListener("click", () => {
+            document.querySelector("#nav").style.transform = "translateX(0%)";
+        })
+        btnClose.addEventListener("click", () => {
+            document.querySelector("#nav").style.transform = "translateX(100%)";
+        })
+    </script>
+</body>
+</html>

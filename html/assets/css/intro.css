@@ -1,0 +1,293 @@
+.intro__wrap {
+    padding: 200px 0 0 0;
+    text-align: center;
+    color: var(--color__white);
+}
+.intro__title {
+    margin-bottom: 200px;
+}
+.intro__title .intro__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro__title .intro__logo h2 {
+    font-size: 100px;
+}
+.intro__title .intro__logo img {
+    width: 160px;
+    height: 150px;
+}
+.intro__title p {
+    font-size: 30px;
+}
+/* intro__s1 */
+.intro__s1 {
+    position: relative;
+    padding: 100px 0;
+}
+.s1__title {
+    text-align: left;
+    width: 50%;
+}
+.s1__title h3 {
+    font-size: 50px;
+    margin-bottom: 100px;
+    font-weight: 700;
+}
+.s1__title p {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--bg__gray3);
+    /* margin-bottom: 100px; */
+}
+.s1__emoji img {
+    width: 150px;
+    height: 150px;
+}
+.s1__emoji .emoji1 {
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.s1__emoji .emoji2 {
+    /* position: absolute; */
+    right: 50%;
+    bottom: 0;
+}
+.s1__emoji span {
+    width: 400px;
+    height: 90px;
+    display: inline-block;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #6A87FB 0%, rgba(95, 110, 169, 0.2) 100%);
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 90px;
+    opacity: 0;
+}
+.s1__emoji .bubble1 {
+    position: absolute;
+    right: 13%;
+    top: 20%;
+    transition: all 0.5s;
+    animation: left 5s infinite ease forwards;
+}
+.s1__emoji .bubble2 {
+    position: absolute;
+    right: 15%;
+    bottom: 40%;
+    transition: all 0.5s;
+    animation: right 5s infinite ease forwards;
+    animation-delay: 1s;
+}
+.s1__emoji .bubble3 {
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    transition: all 0.5s;
+    animation: right 5s infinite ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    }
+    25% {
+        opacity: 1;
+        clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+    }
+    50% {
+        opacity: 1;
+        clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+    }
+    80% {
+        opacity: 1;
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    }
+    100% {
+        opacity: 0;
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    }
+}
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        clip-path: polygon(0 100%, 0 100%, 0 100%, 0 100%);
+    }
+    25% {
+        opacity: 1;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+    50% {
+        opacity: 1;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+    80% {
+        opacity: 1;
+        clip-path: polygon(0 100%, 0 100%, 0 100%, 0 100%);
+    }
+    100% {
+        opacity: 0;
+        clip-path: polygon(0 100%, 0 100%, 0 100%, 0 100%);
+    }
+}
+/* intro__s2 */
+.intro__s2 {
+    padding: 100px 0;
+    background-color: #DAEAF1;
+}
+.intro__s2 .s2__title {
+    margin-bottom: 150px;
+}
+.intro__s2 h3 {
+    font-size: 50px;
+    color: var(--color__black);
+}
+.intro__s2 strong {
+    font-size: 50px;
+    background: linear-gradient(90deg, #F79FFF 0%, #FF7A00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.s2__emoji {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.s2__emoji img {
+    opacity: 0;
+}
+.s2__emoji .run1 {
+    width: 100px;
+    height: 100px;
+    transition: all 2s;
+    animation: BTT 5s infinite ease forwards;
+}
+.s2__emoji .run2 {
+    width: 150px;
+    height: 150px;
+    transition: all 2s;
+    animation: BTT 5s infinite ease forwards;
+    animation-delay: 0.5s;
+}
+.s2__emoji .run3 {
+    width: 200px;
+    height: 200px;
+    transition: all 2s;
+    animation: BTT 5s infinite ease forwards;
+    animation-delay: 1s;
+}
+.s2__emoji .run4 {
+    width: 250px;
+    height: 250px;
+    transition: all 2s;
+    animation: BTT 5s infinite ease forwards;
+    animation-delay: 1.5s;
+}
+.s2__emoji .run5 {
+    width: 300px;
+    height: 300px;
+    transition: all 2s;
+    animation: BTT 5s infinite ease forwards;
+    animation-delay: 2s;
+}
+.s2__emoji .run6 {
+    width: 350px;
+    height: 350px;
+    transition: all 2s;
+    animation: BTT 5s infinite ease forwards;
+    animation-delay: 2.5s;
+}
+@keyframes BTT {
+    0% {
+        opacity: 0;
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+    30% {
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+/* intro__s3 */
+.intro__s3 {
+    padding: 100px 0;
+}
+.s3__title {
+    margin-bottom: 100px;
+}
+.s3__title p {
+    font-size: 30px;
+}
+.s3__title h3 {
+    font-size: 50px;
+}
+.s3__title h3 span {
+    color: #4CB4FF;
+}
+.intro__icon__wrap .intro__icon__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.intro__icon__wrap .intro__icon__inner:first-child {
+    margin-bottom: 50px;
+}
+.intro__icon__inner .intro__icon {
+    width: 30%;
+}
+.intro__icon__inner .intro__icon img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.intro__icon__inner .intro__icon h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.intro__icon__inner .intro__icon p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+/* intro__s4 */
+.intro__s4 {
+    padding: 100px 0;
+    background-color: #DAEAF1;
+    color: var(--color__black);
+}
+.s4__title {
+    margin-bottom: 100px;
+}
+.s4__title p {
+    font-size: 30px;
+}
+.s4__title h3 {
+    font-size: 50px;
+}
+.s4__title h3 span {
+    color: #ff0000;
+}
+
+.intro__wrap i {
+    animation: wave 3s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+@keyframes wave {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}

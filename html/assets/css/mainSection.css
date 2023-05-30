@@ -1,0 +1,237 @@
+.main__section {
+    color: var(--color__white);
+}
+.section__title {
+    text-align: center;
+}
+.section__title .title {
+    font-size: 50px;
+    margin: 100px 0 50px 0;
+}
+.section__title .desc {
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.section2,
+.section4,
+.section6 {
+    background-color: #8E9AAF;
+}
+.card__body {
+    width: 200%;
+    background-color: #2D303D;
+    height: 220px;
+    padding: 20px;
+    position: relative;
+    margin-top: -5px;
+}
+.card__body .title {
+    font-size: 24px;
+    margin: 10px 0 10px 0;
+}
+.card__body .desc {
+    color: #c9c9c9;
+    line-height: 1.5;
+    height: 90px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    -webkit-box-pack: justify;
+}
+.card__body .btn {
+    float: right;
+    margin-right: 30px;
+    z-index: 1000;
+}
+.card__body .btn::before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='9.14497' cy='7.5' rx='8.95161' ry='7.5' fill='white'/%3E%3Cline x1='3.77344' y1='7.5' x2='14.5154' y2='7.5' stroke='black'/%3E%3Cline x1='9.04883' y1='3' x2='9.04883' y2='12' stroke='black'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+}
+.product-carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.product-carousel-container > h3 {
+    font-size: 30px;
+    padding: 100px 0 50px 0;
+}
+
+.product-carousel {
+    height: 700px;
+    list-style: none;
+    position: relative;
+}
+.product-carousel li {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 15%;
+    height: 670px;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+}
+.product-carousel li.item-1 {
+    z-index: 3;
+    transform: translateX(-50%) scale(1) translate3d(-50%, 0, 0);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.product-carousel li img {
+    height: 300px;
+}
+.product-carousel li figure {
+    margin: -4px;
+    padding: 0;
+}
+.product-carousel li.item-2 {
+    z-index: 1;
+    transform: translateX(-50%) scale(0.7) translate3d(240%, -10%, 0);
+}
+.product-carousel li.item-3 {
+    z-index: 0;
+    transform: translateX(-50%) scale(0.5) translate3d(180%, -41%, 0);
+}
+.product-carousel li.item-4 {
+    z-index: 0;
+    transform: translateX(-50%) scale(0.5) translate3d(-40%, -51%, 0);
+}
+.product-carousel li.item-5 {
+    z-index: 1;
+    transform: translateX(-50%) scale(0.5) translate3d(-260%, -41%, 0);
+}
+.product-carousel li.item-6 {
+    z-index: 2;
+    transform: translateX(-50%) scale(0.7) translate3d(-340%, -10%, 0);
+}
+.product-carousel li:hover:after {
+    width: 90%;
+}
+.product-carousel li:not(:hover) img {
+    transition: transform 0.075s ease-out;
+}
+.product-carousel li:not(:hover):after {
+    transition: all 0.075s;
+}
+.product-carousel li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-carousel li img {
+    width: 200%;
+    transition: transform 0.25s ease-in;
+}
+
+.product-carousel-nav .carousel-nav {
+    position: absolute;
+    top: 45%;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: none;
+    border-left: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+.product-carousel-nav .carousel-nav.prev {
+    left: -5%;
+    transform: rotate(-135deg);
+}
+.product-carousel-nav .carousel-nav.next {
+    right: -5%;
+    transform: rotate(45deg);
+}
+
+.carousel-dots {
+    width: 100%;
+    z-index: 2;
+    margin-top: 50px;
+}
+.carousel-dots ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0;
+}
+.carousel-dots ul li {
+    display: inline-block;
+    margin: 0 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.carousel-dots ul li.active {
+    background-color: #fff;
+}
+
+/* 이미지 */
+ul.product-carousel > li img,
+ul.product-carousel > li div {
+   transition: all 0.3s;
+}
+ul.product-carousel > li:hover img,
+ul.product-carousel > li:hover div {
+    box-shadow: 5px 5px 20px -5px rgb(4, 99, 252);
+}
+
+/* 화살표, 닷 메뉴 */
+.product-carousel-nav .carousel-nav {
+    position: absolute;
+    top: 45%;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: none;
+    border-left: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.product-carousel-nav .carousel-nav:hover {
+    border-top: 2px solid rgba(3, 3, 3, 0.5);
+    border-right: 2px solid rgba(3, 3, 3, 0.5);
+} 
+.carousel-dots ul li {
+    display: inline-block;
+    margin: 0 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.carousel-dots ul li:hover {
+    background-color: #fff;
+}

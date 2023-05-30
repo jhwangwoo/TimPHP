@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 글쓰기</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="skip">
+            <a href="#header">헤더 영역 바로 가기</a>
+            <a href="#main">컨텐츠 영역 바로 가기</a>
+            <a href="#footer">푸터 영역 바로 가기</a>
+        </div>
+        <!-- //SKIP -->
+        <header id="header">
+            <h1><a href="main.html">헬드백</a></h1>
+            <p></p>
+            <div class="icon__box">
+                <ul>
+                    <li class="login"><button type="submit"><img src="assets/img/icon_login.svg" alt="로그인"></button></li>
+                    <li><a href="mypage.html"><img src="assets/img/icon_mypage.svg" alt="마이페이지"></a></li>
+                    <li class="btn__menu"><a href="#"><img src="assets/img/icon_menu.svg" alt="메뉴"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <nav id="nav">
+            <button>X</button>
+            <div class="nav__wrap">
+                <img src="assets/img/logo.png" alt="logo">
+                <a href="login.html" class="btnStyle5" alr="로그인">로그인</a>
+                <!-- <img class="profile" src="assets/img/profile.png" alt="프로필">
+                <a href="#" class="btnStyle5" alr="로그아웃">로그아웃</a> -->
+                <ul>
+                    <li><a href="intro.html">헬드백 소개</a></li>
+                    <li><a href="mainSection.html">운동 종류</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+        
+        <div class="slider__wrap">
+            <div class="slider__img">
+                <div class="slider">
+                    <img src="../html/assets/img/slider_01.png" class="img__logo">
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="board__write">
+            <h2>COMMUNITY</h2>
+            <form action="#" name="#" method="#">
+                <fieldset>
+                    <legend class="blind">게시글 작성하기</legend>
+                    <div>
+                        <label for="boardTitle">제목</label>
+                        <input type="text" id="boardTitle" name="boardTitle" class="inputStyle3">
+                    </div>
+                    <div>
+                        <label for="boardContents">내용</label>
+                        <textarea name="text" id="boardContents" rows="20" class="inputStyle3"></textarea>
+                    </div>
+                    <button type="submit" class="btnStyle4">저장하기</button>
+                </fieldset>
+            </form>
+        </div>
+        <footer id="footer">
+            <div class="logo">
+                <img src="assets/img/icon_logo.svg" alt="로고">
+            </div>
+            <p>
+                2023 ©️ 헬드백<br>
+                All Right Reserved
+            </p>
+        </footer>
+    </div>    
+</body>
+</html>

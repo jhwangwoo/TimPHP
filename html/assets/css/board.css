@@ -1,0 +1,337 @@
+/* board__inner 
+    + board__search
+    + board__table
+    + board__pages
+    + board__view
+    + board__btn
+    + board__write
+*/
+main {
+    width: 100%;
+    /* height: 1270px; */
+    background-image: url(../img/sub_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 200px;
+    position: relative;
+    color: #fff;
+}
+.board__inner h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.board__search fieldset {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.board__search input {
+    border: 0;
+    background-color: var(--color__white);
+    padding: 9px 30px;
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 10px;
+}
+.board__search select {
+    border: 0;
+    width: 90px;
+    height: 40px;
+    padding: 11px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.board__search button {
+    margin-right: 10px;
+}
+
+.board__table {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border-top: 2px solid var(--color__white);
+    border-bottom: 2px solid var(--color__white);
+    text-align: center;
+}
+.board__table table th {
+    background-color: var(--color__white);
+    border-bottom: 1px solid var(--color__white);
+    padding: 15px 5px;
+    color: var(--color__black);
+}
+.board__table table tr:hover {
+    background-color: rgba(224, 224, 224, 0.2);;
+}
+.board__table table td {
+    padding: 15px 5px;
+    border-bottom: 1px solid var(--color__white);
+} 
+.board__table table td a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+} 
+.board__table table a {
+    color: var(--color__white);
+}
+.board__pages {
+    margin-bottom: 100px;
+} 
+.board__pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board__pages li a {
+    border: 1px solid #fff;
+    padding: 10px 13px;
+    margin-left: -1px;
+    color: var(--color__white);
+}
+.board__pages li a:hover {
+    background-color: var(--color__white);
+    color: var(--color__black);
+}
+.board__pages li.active a {
+    background-color: var(--color__white);
+    color: var(--color__black);
+}
+.board__box {
+    width: 100%;
+    background-color: #464B5F;
+}
+.board__view {
+    width: 1200px;
+    margin: 0 auto;
+    color: var(--color__white);
+}
+.board__view h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 10%; 
+}
+.board__main {
+    border-top: 3px solid var(--color__white);
+    border-bottom: 3px solid var(--color__white);
+    margin-bottom: 50px;
+}
+.board__main img {
+    width: 50%;
+    height: 50vh;
+    padding: 20px;
+    object-fit: cover;
+}
+.board__title {
+    border-bottom: 1px solid var(--color__white);
+} 
+.board__title p {
+    margin: 20px;
+    font-size: 24px;
+}  
+.board__desc {
+    border-bottom: 1px solid var(--color__white);
+}
+.board__desc p {
+    margin: 20px;
+    line-height: 2;
+}  
+.board__contents {
+    margin: 20px;
+    /* height: 600px; */
+    line-height: 2;
+}
+.board__btn {
+    padding: 20px 0 100px;
+    text-align: right;
+}
+.board__btn a {
+    display: inline-block;
+    text-align: center;
+}
+.board__write {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 120px 200px;
+    background-color: #464B5F;
+    text-align: left;
+}
+.board__write h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.board__write label {
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+.board__write select {
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    background-color: #464B5F;
+    color: #fff;
+    border-radius: 20px;
+}
+.board__write select option {
+    padding: 300px;
+}
+.board__write input {
+    margin-bottom: 50px;
+    border: 3px solid var(--color__white);
+    background-color: #464B5F;
+    color: var(--color__white);
+}
+.board__write textarea {
+    padding: 2em;
+    resize: none;
+    border: 3px solid var(--color__white);
+    background-color: #464B5F;
+    color: var(--color__white);
+}
+.board__write button {
+    float: right;
+    margin-top: 10px;
+}
+.board__write a {
+    float: right;
+    margin: 10px;
+}
+
+/* comment */
+.comment {
+    margin-bottom: 100px;
+}
+.comment__write fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.comment__write input {
+    width: 49.5%;
+    padding: 10px;
+    border: 1px solid #a4a4a4;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+}
+.comment__write textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    border: 1px solid #a4a4a4;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+}
+.comment__view {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.comment__view .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #a4a4a4;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.comment__view .info {
+    width: calc(100% - 60px);
+}
+.comment__view .info .nickname {
+    font-size: 1.6em;
+}
+.comment__view .info .date {
+    color: #aeaeae;
+    font-weight: 100;
+}
+.comment__view .info .msg {
+    color: #cccccc;
+}
+.comment__view .info .del {
+    text-align: right;
+}
+.comment__view .info .del a {
+    color: #8c8c8c;
+}
+.comment__view .info .del a:hover {
+    color: #434343;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.comment__delete {
+    margin-top: 10px;
+}
+.comment__delete input {
+    padding: 1px;
+    border: 1px solid #a4a4a4;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+.comment__delete button {
+    border: 1px solid #a4a4a4;
+    cursor: pointer;
+}
+.comment__delete button:last-child {
+    background-color: #c1c1c1;
+}
+.comment__modify {
+    margin-top: 10px;
+}
+.comment__modify textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #a4a4a4;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+}
+.comment__modify input {
+    padding: 1px;
+    border: 1px solid #a4a4a4;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+.comment__modify button {
+    border: 1px solid #a4a4a4;
+    cursor: pointer;
+}
+.comment__modify button:last-child {
+    background-color: #c1c1c1;
+}
+.board__search button {
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+.board__search button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.board__search a {
+    transition: all 0.3s;
+}
+.board__search a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.board__btn a {
+    transition: all 0.3s;
+}
+.board__btn a:hover {
+    background-color: #000;
+    color: #fff;
+}

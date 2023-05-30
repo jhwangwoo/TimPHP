@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운동 방법 : 사이드 레터럴 레이즈</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="skip">
+            <a href="#header">헤더 영역 바로 가기</a>
+            <a href="#main">컨텐츠 영역 바로 가기</a>
+            <a href="#footer">푸터 영역 바로 가기</a>
+        </div>
+        <!-- //SKIP -->
+        <header id="header">
+            <h1><a href="main.html">헬드백</a></h1>
+            <p></p>
+            <div class="icon__box">
+                <ul>
+                    <li class="login"><button type="submit"><img src="assets/img/icon_login.svg" alt="로그인"></button></li>
+                    <li><a href="mypage.html"><img src="assets/img/icon_mypage.svg" alt="마이페이지"></a></li>
+                    <li class="btn__menu"><a href="#"><img src="assets/img/icon_menu.svg" alt="메뉴"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <nav id="nav">
+            <button>X</button>
+            <div class="nav__wrap">
+                <img src="assets/img/logo.png" alt="logo">
+                <a href="login.html" class="btnStyle5" alr="로그인">로그인</a>
+                <!-- <img class="profile" src="assets/img/profile.png" alt="프로필">
+                <a href="#" class="btnStyle5" alr="로그아웃">로그아웃</a> -->
+                <ul>
+                    <li><a href="intro.html">헬드백 소개</a></li>
+                    <li><a href="mainSection.html">운동 종류</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="mypage.html">마이페이지</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <div class="slider__wrap">
+            <div class="slider__img">
+                <div class="slider">
+                    <img src="assets/img/slider_01.png" class="img__logo">
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+
+        <div class="container">
+            <div class="kind__section">
+                <h3><a href="mainSection.html#shoulder">어깨 운동</a></h3>
+                <h4>사이드 레터럴 레이즈</h4>
+                <p>어깨 근육 중 측면 어깨 근육을 강화하는 운동입니다.</p>
+                <div class="kind">
+                    <ul>
+                        <li>1. 두 손에 덤벨을 들고, 어깨 너비로 발을 벌리고 선다. 팔은 몸 옆에 붙이고 손바닥은 몸을 향하도록 한다.</li>
+                        <li>2. 어깨 높이에서 덤벨을 들어 옆으로 뻗는다. 팔꿈치는 약간 구부리고, 손바닥이 바닥을 향하도록 유지한다.</li>
+                        <li>3. 어깨가 귀와 같은 높이가 되면, 1-2초간 유지한 후, 천천히 원위치로 돌아간다.</li>
+                        <li>4. 덤벨을 들어 올릴 때 숨을 들이고, 내릴 때 숨을 내쉬면 된다.</li>
+                        <li>5. 세트 수와 반복 횟수는 자신의 체력과 목표에 맞게 조절합니다. 보통 레이즈 운동은 저중량 고반복으로 하는게 좋습니다.</li>
+                    </ul>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YdhHnZxcpgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="part">사이드 레터럴 레이즈 자극 부위</div>
+                <figure>
+                    <img src="assets/img/sidelatteralraise-min.png" alt="사이드 레터럴 레이즈">
+                </figure>
+            </div>            
+        </div>
+
+        <footer id="footer">
+            <div class="logo">
+                <img src="assets/img/icon_logo.svg" alt="로고">
+            </div>
+            <p>
+                2023 ©️ 헬드백<br>
+                All Right Reserved
+            </p>
+        </footer>
+    </div>
+
+    <script>    
+        const btnMenu = document.querySelector(".btn__menu");
+        const btnClose = document.querySelector("#nav button");
+
+        // 사이드 메뉴
+        btnMenu.addEventListener("click", () => {
+            document.querySelector("#nav").style.transform = "translateX(0%)";
+        })
+        btnClose.addEventListener("click", () => {
+            document.querySelector("#nav").style.transform = "translateX(100%)";
+        })
+    </script>
+</body>
+</html>
